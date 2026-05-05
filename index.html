@@ -10,9 +10,10 @@
   <body>
     <div class="container" id="container">
       <button
-      id="turnOn"
-      onclick="
-          document.getElementById('container').style.backgroundColor = '#ffe3e3';
+        id="turnOn"
+        onclick="
+          document.getElementById('container').style.backgroundColor =
+            '#ffe3e3';
           document.getElementById('osta-img').style.display = 'flex';
           document.getElementById('top').style.display = 'none';
           document.getElementById('up-triangle').style.display = 'none';
@@ -22,13 +23,12 @@
           document.getElementById('slide-3').style.display = 'none';
           document.getElementById('slide-4').style.display = 'none';
           document.getElementById('bottom').style.display = 'none';
-          
         "
       >
         Turn On
       </button>
       <div class="section-container" id="mini-container">
-        <img src="/media/osta.jpg" id="osta-img">
+        <img src="/media/osta.jpg" id="osta-img" />
         <div class="header" id="top">
           <div class="top-triangle" id="up-triangle"></div>
         </div>
@@ -43,7 +43,8 @@
       <button
         id="turnOff"
         onclick="
-          document.getElementById('container').style.backgroundColor = '#edfeff';
+          document.getElementById('container').style.backgroundColor =
+            '#edfeff';
           document.getElementById('osta-img').style.display = 'none';
           document.getElementById('top').style.display = 'flex';
           document.getElementById('up-triangle').style.display = 'flex';
@@ -53,13 +54,11 @@
           document.getElementById('slide-3').style.display = 'flex';
           document.getElementById('slide-4').style.display = 'flex';
           document.getElementById('bottom').style.display = 'flex';
-          "
+        "
       >
         Turn Off
       </button>
     </div>
-
-
 
     <!-- ================ Java Script ================ -->
     <script src="/js/main.js"></script>
