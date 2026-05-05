@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #dcfdff;
+}
+
+.section-container {
+    width: 50px;
+    height: 320px;
+    border-radius: 0 0 12px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.section-container:hover {
+    transform: translateY(-10px);
+}
+
+.header{
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0px 25.5px 90px 25.5px;
+  border-color: transparent transparent #faf5e5 transparent;
+  transform: rotate(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+
+.top-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 7.5px 26px 7.5px;
+    border-color: transparent transparent #000000 transparent;
+    transform: rotate(0deg);
+}
+
+.content {
+    width: 50px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-1 {
+    width: 100%;
+    height: 100%;
+    background-color: #f1bd12;
+}
+
+.slide-2 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.slide-3 {
+    width: 100%;
+    height: 100%;
+    background-color: #f1bd12;
+}
+
+.slide-4 {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+.footer{
+    width: 50px;
+    height: 30px;
+    background-color: #d36060;
+    border-radius: 0 0 12px 12px;
+}
+
+#turnOn {
+    margin: 0 250px 0 0;
+    padding: 9px 28px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #46e30c;
+    transition: all 0.3s ease;
+}
+
+#turnOn:hover {
+    background-color: #55f112;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #a0f57ba2;
+}
+
+#turnOff {
+    margin: 0 0 0 250px;
+    padding: 9px 28px;
+    border: none;
+    border-radius: 7px;
+    background-color: #ecbe06;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#turnOff:hover {
+    background-color: #facd1a;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #f5d77ba2;
+}
+#osta-img {
+    display: none;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <button
+      id="turnOn"
+      onclick="
+          document.getElementById('container').style.backgroundColor = '#ffa4a408';
+          document.getElementById('osta-img').style.display = 'flex';
+          document.getElementById('top').style.display = 'none';
+          document.getElementById('up-triangle').style.display = 'none';
+          document.getElementById('middle').style.display = 'none';
+          document.getElementById('slide-1').style.display = 'none';
+          document.getElementById('slide-2').style.display = 'none';
+          document.getElementById('slide-3').style.display = 'none';
+          document.getElementById('slide-4').style.display = 'none';
+          document.getElementById('bottom').style.display = 'none';
+        "
+      >
+        Turn On
+      </button>
+      <div class="section-container" id="mini-container">
+        <img src="/media/osta.jpg" id="osta-img">
+        <div class="header" id="top">
+          <div class="top-triangle" id="up-triangle"></div>
+        </div>
+        <div class="content" id="middle">
+          <div class="slide-1" id="slide-1"></div>
+          <div class="slide-2" id="slide-2"></div>
+          <div class="slide-3" id="slide-3"></div>
+          <div class="slide-4" id="slide-4"></div>
+        </div>
+        <div class="footer" id="bottom"></div>
+      </div>
+      <button
+        id="turnOff"
+        onclick="
+          document.getElementById('container').style.backgroundColor = '#dcfdff';
+          document.getElementById('osta-img').style.display = 'none';
+          document.getElementById('top').style.display = 'flex';
+          document.getElementById('up-triangle').style.display = 'flex';
+          document.getElementById('middle').style.display = 'flex';
+          document.getElementById('slide-1').style.display = 'flex';
+          document.getElementById('slide-2').style.display = 'flex';
+          document.getElementById('slide-3').style.display = 'flex';
+          document.getElementById('slide-4').style.display = 'flex';
+          document.getElementById('bottom').style.display = 'flex';
+          "
+      >
+        Turn Off
+      </button>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
