@@ -7,58 +7,25 @@
     <!-- style css -->
     <link rel="stylesheet" href="/css/style.css" />
   </head>
+
   <body>
-    <div class="container" id="container">
-      <button
-        id="turnOn"
-        onclick="
-          document.getElementById('container').style.backgroundColor =
-            '#ffe3e3';
-          document.getElementById('osta-img').style.display = 'flex';
-          document.getElementById('top').style.display = 'none';
-          document.getElementById('up-triangle').style.display = 'none';
-          document.getElementById('middle').style.display = 'none';
-          document.getElementById('slide-1').style.display = 'none';
-          document.getElementById('slide-2').style.display = 'none';
-          document.getElementById('slide-3').style.display = 'none';
-          document.getElementById('slide-4').style.display = 'none';
-          document.getElementById('bottom').style.display = 'none';
-        "
-      >
-        Turn On
-      </button>
-      <div class="section-container" id="mini-container">
-        <img src="/media/osta.jpg" id="osta-img" />
-        <div class="header" id="top">
-          <div class="top-triangle" id="up-triangle"></div>
-        </div>
-        <div class="content" id="middle">
-          <div class="slide-1" id="slide-1"></div>
-          <div class="slide-2" id="slide-2"></div>
-          <div class="slide-3" id="slide-3"></div>
-          <div class="slide-4" id="slide-4"></div>
-        </div>
-        <div class="footer" id="bottom"></div>
+    <section class="section-container">
+      <div class="container">
+        <h3 id="titel">حاسبة التحويل من الدولار للجنيه المصري</h3>
+        <form onsubmit="change(); return false;">
+          <input type="text" placeholder="ادخل إجمالي المبلغ المراد تحويله للدولار." class="dollar" id="dollar"/>
+          <input type="submit" value="تحويل" class="result" />
+        </form>
+        <span class="demo"><h4 id="result">اوعى تكتب رقم صحيح, انا نصحتك وانت براحتك</h4></span>
       </div>
-      <button
-        id="turnOff"
-        onclick="
-          document.getElementById('container').style.backgroundColor =
-            '#edfeff';
-          document.getElementById('osta-img').style.display = 'none';
-          document.getElementById('top').style.display = 'flex';
-          document.getElementById('up-triangle').style.display = 'flex';
-          document.getElementById('middle').style.display = 'flex';
-          document.getElementById('slide-1').style.display = 'flex';
-          document.getElementById('slide-2').style.display = 'flex';
-          document.getElementById('slide-3').style.display = 'flex';
-          document.getElementById('slide-4').style.display = 'flex';
-          document.getElementById('bottom').style.display = 'flex';
-        "
-      >
-        Turn Off
-      </button>
-    </div>
+
+      <div id="rashFord">
+        <div class="video-container">
+          <video src="/media/Video/rashford.mp4" controls class="rashford"></video>
+          <img src="/media/Image/ramez.jpg" id="ramez" />
+        </div>
+      </div>
+    </section>
 
     <!-- ================ Java Script ================ -->
     <script src="/js/main.js"></script>
